@@ -18,37 +18,35 @@
   </head>
 <body>
 
-  <div class="container" ng-controller="LunchCheckController">
+	<div class="container" ng-controller="LunchCheckController">
 
-    <h1>Lunch Checker</h1>
+		<h1>Lunch Checker</h1>
 
-    <div style="padding: 2px; background-color:{{boxColor}}"
-        class="form-group">
-      <input
-      	id="lunch-menu" 
-        type="text"
-        placeholder="list comma separated dishes you usually have for lunch"
-        class="form-control"
-        data-ng-model="listItems">
-    </div>
+		<div style="padding: 2px; background-color:{{boxColor}}"
+        	 class="form-group">
+			<input id="lunch-menu" 
+				   type="text"
+				   placeholder="list comma separated dishes you usually have for lunch"
+				   class="form-control"
+				   data-ng-model="listItems">
+		</div>
 
-    <div class="form-group">
-      <button
-        class="btn btn-default"
-        data-ng-click="verifyAmount()">
-        Check If Too Much...
-      </button>
-    </div>
+		<div class="form-group">
+			<button class="btn btn-default"
+					data-ng-click="verifyAmount()">
+				Check If Too Much...
+			</button>
+		</div>
 
-    <div>
-    <div class="form-group message" style="margin:0px; color:{{fgColor}}; background-color:#fff">
-    	{{diagnostic}}
-    </div>
- 	<small>{{note}}</small>
-      
-    </div>
+		<div>
+			<div class="form-group message"
+				 style="margin:0px; color:{{fgColor}}; background-color:#fff">
+				{{diagnostic}}
+			</div>
+			<small>{{note}}</small>
+		</div>
     
-  </div>
+	</div>
 
 </body>
 </html>
